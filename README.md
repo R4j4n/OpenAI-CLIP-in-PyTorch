@@ -108,24 +108,24 @@ SentenceTransformer(
 * * * 
 <h4 align='center'> Text to image  </h4>
 <p align="center" width="100%">
-    <img  src="/home/rjn/Documents/CLIP/static/output1.png">
+    <img  src="static/output1.png">
 </p>
 <p align="center" width="100%">
-    <img  src="/home/rjn/Documents/CLIP/static/output2.png">
+    <img  src="static/output2.png">
 </p>
 <p align="center" width="100%">
-    <img  src="/home/rjn/Documents/CLIP/static/output3.png">
+    <img  src="static/output3.png">
 </p>
 <p align="center" width="100%">
-    <img  src="/home/rjn/Documents/CLIP/static/output4.png">
+    <img  src="static/output4.png">
 </p>
 
 
 <h4 align='center'> Image to Text</h4>
 
 <p align="center" width="100%">
-    <img width="80%" src="/home/rjn/Documents/CLIP/static/output5.png">
+    <img width="80%" src="static/output5.png">
 </p>
 <p align="center" width="100%">
-    <img  src="/home/rjn/Documents/CLIP/static/output6.png">
+    <img  src="static/output6.png">
 </p>
