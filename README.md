@@ -21,7 +21,7 @@ CLIP model is a zero-shot, multi-modal model that uses contrastive loss for pre-
     <img width="70%" src="https://vinija.ai/models/assets/clip/1.png">
 </p>
 
-Assume we have a batch of N images paired with their respective descriptions e.g. $<image1, text1>$, $<image2, text2>$, $<imageN, textN>$.
+Assume we have a batch of N images paired with their respective descriptions e.g. ```<image1, text1>```, ```<image2, text2>```, ```<imageN, textN>```.
 
 Contrastive Pre-training aims to jointly train an Image and a Text Encoder that produce image embeddings $[I1, I2 … IN]$ and text embeddings $[T1, T2 … TN]$, in a way that:
 
@@ -55,7 +55,7 @@ A few extra remarks:
 
 
 <p align="center" width="100%">
-    <img width="70%" src="https://vinija.ai/models/assets/clip/7.png">
+    <img width="70%" src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*oOYgcW9XgA4iUWQKOI6O1Q.png">
 </p>
 
 We have now pre-trained our Image and Text Encoders, and we are ready for Zero-Shot Classification.<br>
