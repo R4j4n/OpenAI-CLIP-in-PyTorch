@@ -12,7 +12,7 @@
 
 
 
-**Contrastive Pre-training** :: [Source](https://vinija.ai/models/CLIP/) 
+**Contrastive Pre-training** [Source](https://vinija.ai/models/CLIP/) 
 
 * * * 
 CLIP model is a zero-shot, multi-modal model that uses contrastive loss for pre-training. Contrastive loss is a technique used during the pretraining of models like CLIP to help them learn representations that bring together related instances and push apart unrelated ones. In the case of CLIP, the model is trained on pairs of images and text, and the goal is to make the model understand and correctly match the pairs. The contrastive loss function helps in this process.
@@ -29,7 +29,7 @@ Contrastive Pre-training aims to jointly train an Image and a Text Encoder that 
 
 - In a contrastive fashion, the cosine similarities of dissimilar pairs ```<I1,T2>```, ```<I1,T3>… <Ii,Tj>``` (where ```i≠j```) are minimized.
 
-<u>Learning Process</u> ::
+<u>Learning Process</u> 
 [Source](https://vinija.ai/models/CLIP/)
 
 Here’s a step-by-step breakdown of how CLIP works:
@@ -39,13 +39,11 @@ Here’s a step-by-step breakdown of how CLIP works:
 
 2. The text encoder is a standard Transformer model, say GPT2. The image encoder can be either a ResNet or a Vision Transformer.
 
-3. For every image in the batch, the Image Encoder computes an image vector. The first image corresponds to the I1 vector, the second to I2, and so on. Each vector is of size de, where de is the size of the latent dimension. Hence, the output of this step is N× de matrix.
-4. Similarly, the textual descriptions are squashed into text embeddings [‘T1‘,‘T2‘,...,‘TN‘]
-, producing a N×
- de matrix.
-5. Finally, we multiply those matrices and calculate the pairwise cosine similarities between every image and text description. This produces an N×N
- matrix.
-6. The goal is to maximize the cosine similarity along the diagonal - these are the correct ```(image, text)``` pairs. In a contrastive fashion, off-diagonal elements should have their similarities minimized (e.g., I1 image is described by T1 and not by T2, T3, T4, etc).
+3. For every image in the batch, the Image Encoder computes an image vector. The first image corresponds to the I1 vector, the second to I2, and so on. Each vector is of size de, where ```de``` is the size of the latent dimension. Hence, the output of this step is ```N× de matrix```.
+4. Similarly, the textual descriptions are squashed into text embeddings ```[‘T1‘,‘T2‘,...,‘TN‘]```
+, producing a ```N×de``` matrix.
+5. Finally, we multiply those matrices and calculate the pairwise cosine similarities between every image and text description. This produces an ```N×N``` matrix.
+6. The goal is to maximize the cosine similarity along the diagonal - these are the correct ```(image, text)``` pairs. In a contrastive fashion, off-diagonal elements should have their similarities minimized ```(e.g., I1 image is described by T1 and not by T2, T3, T4, etc)```.
 A few extra remarks:
 
 - The model uses the symmetric cross-entropy loss as its optimization objective. This type of loss minimizes both the image-to-text direction as well as the text-to-image direction (remember, our contrastive loss matrix keeps both the (I1, T2) and (I2, T1) cosine similarities).
@@ -103,6 +101,8 @@ SentenceTransformer(
   (1): Pooling({'word_embedding_dimension': 768, 'pooling_mode_cls_token': False, 'pooling_mode_mean_tokens': True, 'pooling_mode_max_tokens': False, 'pooling_mode_mean_sqrt_len_tokens': False})
 )
 ```
+[Download](https://www.kaggle.com/datasets/rajanghimire/clip-custom-model) the pretrained model.
+
 <h3 align='center'> Results </h3>
 
 * * * 
