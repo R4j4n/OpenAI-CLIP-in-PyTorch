@@ -129,3 +129,11 @@ SentenceTransformer(
 <p align="center" width="100%">
     <img  src="static/output6.png">
 </p>
+
+
+References:
+1. https://towardsdatascience.com/simple-implementation-of-openai-clip-model-a-tutorial-ace6ff01d9f2
+2. https://vinija.ai/models/CLIP/
+3. https://towardsdatascience.com/clip-the-most-influential-ai-model-from-openai-and-how-to-use-it-f8ee408958b1
+4. https://cv-tricks.com/how-to/understanding-clip-by-openai/
+5. https://www.youtube.com/watch?v=fQyHEXZB-nM
